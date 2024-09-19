@@ -1,0 +1,147 @@
+@import url("/fonts/hanken-grotesk/hanken-grotesk.css");
+
+$fg: #ffffff;
+$fg-dark: #cccccc;
+$bg-dark: #0b0a0d;
+$bg: #151418;
+$surface0: #19171f;
+$surface1: #222027;
+$surface2: #2e2c35;
+$surface3: #3a3941;
+$surface4: #4b485b;
+$accent: #b7a3ff;
+
+$font-sans: "Hanken Grotesk", sans;
+$font-monospace: monospace;
+$font-size-giant: 2.6rem;
+$font-size-huge: 2rem;
+$font-size-bigger: 1.5rem;
+$font-size-big: 1.25rem;
+$font-size-normal: 1rem;
+$font-size-small: 0.75rem;
+
+.invisible {
+  display: none;
+}
+
+html {
+  background-color: black;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: $font-sans;
+  font-size: $font-size-normal;
+  line-height: 1.4em;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  flex-grow: 1;
+  padding: 0;
+
+  background-color: black;
+  color: $fg;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  font-size: $font-size-normal;
+  padding: 2rem 2rem 0 2rem;
+
+  a:hover {
+    text-decoration: none;
+  }
+  nav {
+    text-align: right;
+    ul {
+      margin: 0;
+      li {
+        display: inline;
+      }
+    }
+    li + li::before {
+      content: "";
+      padding: 0.1em;
+    }
+    hr {
+      border-width: 1px;
+      border-style: solid;
+      color: $surface3;
+      margin: 2rem 0 2rem;
+    }
+  }
+}
+
+footer {
+  padding: 0 2rem 2rem 2rem;
+  font-size: $font-size-normal;
+  color: $fg-dark;
+  ul {
+    margin: 0;
+    text-align: center;
+    li {
+      display: inline;
+    }
+    li + li::before {
+      content: "br";
+    }
+  }
+}
+
+h1 {
+  font-size: $font-size-giant;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: $font-size-huge;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: $font-size-bigger;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: $font-size-big;
+  font-weight: 600;
+}
+
+.content {
+  padding: 0 1.5rem;
+  #heading .wrap * {
+    display: inline;
+  }
+
+  .splash {
+    font-size: $font-size-normal;
+  }
+
+  img {
+    display: block;
+    margin: 16px auto;
+    border-radius: 0.5em;
+    padding: 1px;
+    background-color: black;
+  }
+}
