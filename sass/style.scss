@@ -1,4 +1,4 @@
-@import url("/fonts/hanken-grotesk/hanken-grotesk.css");
+@import url("/font/zen-maru-gothic/zen-maru-gothic.css");
 
 $fg: #ffffff;
 $fg-dark: #cccccc;
@@ -11,7 +11,7 @@ $surface3: #3a3941;
 $surface4: #4b485b;
 $accent: #b7a3ff;
 
-$font-sans: "Hanken Grotesk", sans;
+$font-sans: "Zen Maru Gothic", sans;
 $font-monospace: monospace;
 $font-size-giant: 2.6rem;
 $font-size-huge: 2rem;
@@ -34,6 +34,7 @@ html {
 body {
   font-family: $font-sans;
   font-size: $font-size-normal;
+  font-weight: 500;
   line-height: 1.4em;
 
   display: flex;
@@ -61,11 +62,11 @@ a:hover {
   text-decoration: none;
 }
 
-#header {
+header {
   display: flex;
   justify-content: space-between;
   font-size: $font-size-normal;
-  padding: 2rem 2rem 0 2rem;
+  padding: 1.5rem 2rem 0 2rem;
 
   a:hover {
     text-decoration: none;
@@ -109,12 +110,12 @@ footer {
 
 h1 {
   font-size: $font-size-giant;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h2 {
   font-size: $font-size-huge;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h3 {
@@ -124,17 +125,13 @@ h3 {
 
 h4 {
   font-size: $font-size-big;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .content {
   padding: 0 1.5rem;
   #heading .wrap * {
     display: inline;
-  }
-
-  .splash {
-    font-size: $font-size-normal;
   }
 
   img {

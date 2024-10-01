@@ -2,7 +2,6 @@
 template = "index.html"
 title = "shezdy"
 +++
-<br>
 
 # hi, i'm d
 #### (aka shezdy)
